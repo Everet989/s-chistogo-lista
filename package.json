@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "prettier": "^3.4.2",
+    "stylelint": "^16.12.0"
+  },
+  "name": "s-chistogo-lista",
+  "description": "https://github.com/Everet989/s-chistogo-lista.git",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint '**/*.css'",
+    "lintfix": "stylelint '**/*.css' --fix",
+    "checkall": "npm run check && npm run lint",
+    "fixall": "npm run format && npm run lintfix ."
+  },
+  "author": "",
+  "license": "ISC"
+}

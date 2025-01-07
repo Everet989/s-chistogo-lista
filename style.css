@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.page {
+  display: grid;
+  grid-template-rows: 132px 221px 435px 1368px 1749px 62px;
+  grid-template-columns: 360px;
+  grid-template-areas:
+    "header"
+    "title"
+    "black-content"
+    "yelliw-content"
+    "black-content-two"
+    "footer";
+  margin: 0px auto;
+  justify-content: center;
+  font-family: "Inter regular", sans-serif;
+}
+
+/* styles header */
+
+.header {
+  grid-area: "header";
+  display: flex;
+  gap: 168px;
+  justify-content: space-between;
+  background-color: black;
+  padding: 24px 20px;
+}
+
+.header__link-logo {
+  display: block;
+  width: 78px;
+  height: 15px;
+}
+
+.header__nav-bar {
+  color: white;
+}
+
+.header__nav-bar-spisok {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.header__nav-bar-link {
+  color: white;
+}
+
+.active-link {
+  text-decoration: none;
+}
+
+/* title */
+
+.first-section {
+  grid-area: "title";
+  position: relative;
+  background-color: black;
+  padding: 7px 24px 0px 20px;
+}
+
+.first-section__cover {
+  position: absolute;
+  inset: 30px 0px 0px 21px;
+}
+
+.first-section__title {
+  color: white;
+  font-family: "EB garamond regular", serif;
+  font-size: 72px;
+}
+
+.first-section__span-box {
+  display: block;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+/* section black */
+
+.section-black {
+  grid-area: black-content;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 30px 20px 38px 20px;
+  background-color: black;
+  color: white;
+  font-family: "Inter regular", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.section-black__box-title {
+  display: flex;
+  gap: 16px;
+}
+
+.section-black__title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* section yellow */
+
+.section-yellow {
+  grid-area: section-yellow;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 40px 20px;
+  font-family: "Inter regular", sans-serif;
+  font-weight: 400;
+  background-color: yellow;
+}
+
+.section-yellow__title {
+  font-family: "EB Garamond medium", serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.span-block {
+  display: block;
+}
+
+.section-yellow-paragraph {
+  font-family: "Inter regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
